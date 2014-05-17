@@ -1,1 +1,6 @@
-DirectoryIndex index.html index.php index.htm
+DirectoryIndex maintenance.html maintenance.php maintenance.htm index.html index.php index.htm
+ErrorDocument 400 /errors/badrequest.html
+ErrorDocument 401 /errors/authrequired.html
+ErrorDocument 403 /errors/forbidden.html
+ErrorDocument 404 /errors/notfound.html
+ErrorDocument 500 /errors/internalserver.html
