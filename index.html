@@ -1,39 +1,120 @@
-<!DOCTYPE html>
-<html>
-<!--Later on when we implement the control metroweb control panel,
-some items will need to be able to change to get server side data. 
-For example the control panel will have a input option for 
-site title, this will have to change accordingly, fetching data from the server.-->
-<head>
-	<title>MetroWeb Demo</title> 
-	<meta charset="UTF-8">
-		<!--[if lte IE 8]>
-	<script src="src/scripts/jquery-1.11.1.js"></script>
-		<![endif]-->
-		<!--[if gte IE 9]>
-	<script src="src/scripts/jquery-2.1.1.js"></script>
-		<![endif]-->
-		<!--[if !IE]><!-->
-	<script src="src/scripts/jquery-2.1.1.js"></script>
-		<!--<![endif]-->
-	<script src="src/scripts/jquery.mousewheel.js"></script>
-	<script src="src/scripts/mousewheel_controller.js"></script>
-	<script src="src/scripts/metro_controller.js"></script>
-	<script src="themes/start/js/jquery-ui-1.10.4.custom.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="themes/start/css/jquery-ui-1.10.4.custom.min.css">
-	<link rel="stylesheet" type="text/css" href="themes/start/css/style.css">
-	<script>
-	</script>
-</head>
-
-<body>
-	<div id="header">
-	</div>
-	<div id="apps">
-	<div>
-	<div id="footer">
-	</div>
-	
-</body>
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metroweb Demo</title> 
+	<meta charset="UTF-8">
+		<!--[if lte IE 8]>
+	<script src="src/scripts/jquery-1.11.1.js"></script>
+		<![endif]-->
+		<!--[if gte IE 9]>
+	<script src="src/scripts/jquery-2.1.1.js"></script>
+		<![endif]-->
+		<!--[if !IE]><!-->
+	<script src="src/scripts/jquery-2.1.1.js"></script>
+		<!--<![endif]-->
+	<script src="src/scripts/jquery.mousewheel.js"></script>
+	<script src="src/scripts/isotope.pkgd.js"></script>
+	<script src="src/scripts/mousewheel_controller.js"></script>
+	<script src="src/scripts/metro_controller.js"></script>
+	<script src="themes/start/js/jquery-ui-1.10.4.custom.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="themes/start/css/jquery-ui-1.10.4.custom.min.css">
+	<link rel="stylesheet" type="text/css" href="themes/start/css/style.css">
+</head>
+
+<body>
+	<div id="header">
+		<span id="title">Metroweb Demo</span>
+	</div>
+	<div id="apps">
+		<div id="group1" data-apps="10">
+			<div id="name">Apps</div>
+			<div id="applist" class="js-isotope" data-isotope-options='{ "itemSelector": ".app", "masonry": { "columnWidth": 120, "gutter": 4 } }'>
+				<img class="app" id="aboutme_1_opener" src="AboutMe.png" alt="About Me">
+				<img class="app wide" id="calendar_1_opener" src="Calendar.png" alt="Calendar">
+				<img class="app tall" id="notes_1_opener" src="Notes.png" alt="Notes">
+				<img class="app tall wide" id="time_1_opener" src="Time.png" alt="Time">
+				<img class="app" id="aboutme_2_opener" src="AboutMe.png" alt="About Me">
+			</div>
+		</div>
+		<div id="group2" data-apps="13">
+			<div id="name">Group 2 Apps</div>
+			<div id="applist" class="js-isotope" data-isotope-options='{ "itemSelector": ".app", "masonry": { "columnWidth": 120, "gutter": 4 } }'>
+				<img class="app" id="aboutme_3_opener" src="AboutMe.png" alt="About Me">
+				<img class="app tall wide" id="time_2_opener" src="Time.png" alt="Time">
+				<img class="app" id="aboutme_4_opener" src="AboutMe.png" alt="About Me">
+				<img class="app" id="aboutme_5_opener" src="AboutMe.png" alt="About Me">
+				<img class="app wide" id="calendar_2_opener" src="Calendar.png" alt="Calendar">
+				<img class="app tall" id="notes_2_opener" src="Notes.png" alt="Notes">
+				<img class="app" id="aboutme_6_opener" src="AboutMe.png" alt="About Me">
+				<img class="app" id="aboutme_7_opener" src="AboutMe.png" alt="About Me">
+			</div>
+		</div>
+		<div id="group3" data-apps="6">
+			<div id="name">Group 3 Apps</div>
+			<div id="applist" class="js-isotope" data-isotope-options='{ "itemSelector": ".app", "masonry": { "columnWidth": 120, "gutter": 4 } }'>
+				<img class="app tall wide" id="time_3_opener" src="Time.png" alt="Time">
+				<img class="app wide" id="calendar_3_opener" src="Calendar.png" alt="Calendar">
+			</div>
+		</div>
+		<div id="group4" data-apps="3">
+			<div id="name">Group 4 Apps</div>
+			<div id="applist" class="js-isotope" data-isotope-options='{ "itemSelector": ".app", "masonry": { "columnWidth": 120, "gutter": 4 } }'>
+				<img class="app tall" id="notes_3_opener" src="Notes.png" alt="Notes">
+				<img class="app" id="aboutme_8_opener" src="AboutMe.png" alt="About Me">
+			</div>
+		</div>
+	</div>
+	<div id="aboutme_1" title="About Me App#1">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis sem eget vehicula rutrum. Vestibulum ante ipsum primis in faucibus.</p>
+	</div>
+	<div id="aboutme_2" title="About Me App#2">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis sem eget vehicula rutrum. Vestibulum ante ipsum primis in faucibus.</p>
+	</div>
+	<div id="aboutme_3" title="About Me App#3">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis sem eget vehicula rutrum. Vestibulum ante ipsum primis in faucibus.</p>
+	</div>
+	<div id="aboutme_4" title="About Me App#4">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis sem eget vehicula rutrum. Vestibulum ante ipsum primis in faucibus.</p>
+	</div>
+	<div id="aboutme_5" title="About Me App#5">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis sem eget vehicula rutrum. Vestibulum ante ipsum primis in faucibus.</p>
+	</div>
+	<div id="aboutme_6" title="About Me App#6">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis sem eget vehicula rutrum. Vestibulum ante ipsum primis in faucibus.</p>
+	</div>
+	<div id="aboutme_7" title="About Me App#7">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis sem eget vehicula rutrum. Vestibulum ante ipsum primis in faucibus.</p>
+	</div>
+	<div id="aboutme_8" title="About Me App#8">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis sem eget vehicula rutrum. Vestibulum ante ipsum primis in faucibus.</p>
+	</div>
+	<div id="calendar_1" title="Calendar App#1">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id semper velit. Duis lacinia interdum enim, id sollicitudin massa accumsan.</p>
+	</div>
+	<div id="calendar_2" title="Calendar App#2">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id semper velit. Duis lacinia interdum enim, id sollicitudin massa accumsan.</p>
+	</div>
+	<div id="calendar_3" title="Calendar App#3">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id semper velit. Duis lacinia interdum enim, id sollicitudin massa accumsan.</p>
+	</div>
+	<div id="notes_1" title="Notes App#1">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi quam, fermentum eu consectetur sed, convallis quis magna. In hac.</p>
+	</div>
+	<div id="notes_2" title="Notes App#2">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi quam, fermentum eu consectetur sed, convallis quis magna. In hac.</p>
+	</div>
+	<div id="notes_3" title="Notes App#3">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi quam, fermentum eu consectetur sed, convallis quis magna. In hac.</p>
+	</div>
+	<div id="time_1" title="Time App#1">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut tincidunt lorem. Sed odio odio, convallis eu bibendum at, viverra.</p>
+	</div>
+	<div id="time_2" title="Time App#2">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut tincidunt lorem. Sed odio odio, convallis eu bibendum at, viverra.</p>
+	</div>
+	<div id="time_3" title="Time App#3">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut tincidunt lorem. Sed odio odio, convallis eu bibendum at, viverra.</p>
+	</div>
+</body>
+
 </html>

@@ -1,5 +1,62 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 html {
 	background-color:#4DB5E6;
+	font-family: 'open_sans';
+}
+body {
+	margin: 40px 0px 0px 120px;
+}
+#header {
+	position: fixed;
+	top: 40px;
+	left: 120px;
+}
+#footer {
+	position: fixed;
+}
+#header {
+	font-family: 'open_sans-light';
+}
+#apps {
+	font-family: 'open_sans-light';
+	margin: 130px 0px 0px 0px;
+}
+#title {
+	font-size: 42pt;
+}
+#name {
+	font-size: 20px;
+}
+#applist {
+	margin: 10px 0px 0px 0px;
+}
+#applist:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.app {
+  float: left;
+  width: 120px;
+  height: 120px;
+  padding: 2px;
+  margin-bottom: 4px;
+}
+.app.wide { 
+	width: 244px; 
+}
+.app.tall { 	
+	height: 244px; 
+}
+.hover {
+	background-color: #0066FF;
+}
+.app-opened {
+	position: fixed;
 }
 /*Typography (Open Sans Font)
 	Avaliable Fonts:
